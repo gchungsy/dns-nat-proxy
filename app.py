@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template_string, redirect, url_for
 import json
 from multiprocessing import Process
-import dns
+import dns_backend
 
 # Initialize the Flask application
 app = Flask(__name__)
@@ -17,7 +17,7 @@ def start_flask_app():
 # Function to start the DNS server
 def start_dns_server():
     # Call the main function of the DNS server backend
-    dns.main()
+    dns_backend.main()
 
 # Function to load the NAT table from a JSON file
 def load_nat_table():
