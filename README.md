@@ -2,7 +2,7 @@
 
 ## Overview
 
-This tool is designed to manage NAT rules and DNS resolvers for a DNS proxy service. It provides an easy-to-use web interface for configuring, updating, and deleting NAT mappings and resolver IP addresses.
+A client sends a DNS request to the DNS-NAT-Proxy. The DNS server checks if it recognizes the requested DNS zone. If not, it forwards the request to a default DNS server and returns the response to the client. If the DNS server is familiar with the DNS zone, it forwards the request to the associated DNS resolver. If the DNS response includes a subnet found in the Network Address Translation (NAT) table, it undergoes modification before being sent back to the client.
 
 ## Features
 
