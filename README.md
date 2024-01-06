@@ -25,3 +25,7 @@ The `dns_nat_table.json` file serves as the  configuration input for the tool, d
 ## Docker Deployment
 
 The tool is also available as a Docker container for ease of deployment and is accessible at `docker pull ghcr.io/thenetautomationquy/dns-nat-proxy:latest`.
+
+## Webinterface
+
+![Alt text](webinterface.png?raw=true "Title")
